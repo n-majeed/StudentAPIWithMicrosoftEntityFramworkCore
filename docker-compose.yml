@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  studentapiwithdb:
+    image: ${DOCKER_REGISTRY-}studentapiwithdb
+    build:
+      context: .
+      dockerfile: StudentAPIWithDB\Dockerfile
